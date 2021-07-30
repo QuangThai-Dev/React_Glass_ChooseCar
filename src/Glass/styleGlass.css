@@ -1,0 +1,41 @@
+header {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 30px;
+}
+.glassContainer {
+  background-image: url(./imageGlass/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+}
+.cardGlass {
+  background-image: url(./imageGlass/model.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+  z-index: 1;
+}
+.imgGlass {
+  position: absolute;
+  width: 50%;
+  left: 73px;
+  top: 24%;
+}
+.card__body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(241, 86, 13, 0.2);
+}
+.card-title {
+  color: blue;
+}
+.card-text {
+  color: white;
+}
+.itemsGlass {
+  background-color: rgba(241, 86, 13, 0.2);
+}
