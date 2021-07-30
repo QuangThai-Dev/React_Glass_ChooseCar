@@ -30,6 +30,7 @@ export default class ChosseCar extends Component {
       },
     ],
   };
+  // kiếm ra bánh xe
   findWheel = (arrWheels, value) => {
     let wheel = arrWheels.filter((wheel) => {
       return wheel.idWheel === value;
@@ -37,11 +38,13 @@ export default class ChosseCar extends Component {
     // console.log(wheel[0]);
     return wheel[0].srcImg;
   };
+  // Hàm thay đổi bánh xe
   handleWheel = (srcImg) => {
     this.setState({
       srcImg,
     });
   };
+  //hàm thay đổi màu xe
   handleColorCar = (
     id,
     srcImg,
@@ -67,6 +70,8 @@ export default class ChosseCar extends Component {
       wheels,
     });
   };
+
+  //Render ra màu xe
   renderColor = (dataCar) => {
     return dataCar.map((colorCar, index) => {
       const {
@@ -117,6 +122,7 @@ export default class ChosseCar extends Component {
     });
   };
 
+  // render ra danh sách bánh xe
   renderWheels = (dataWheels, arrWheels) => {
     return dataWheels.map((wheel, index) => {
       const { idWheel, img, title, price } = wheel;
